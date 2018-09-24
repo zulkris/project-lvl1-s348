@@ -1,5 +1,7 @@
 #!/usr/bin/env php
 <?php
+namespace BrainGames;
+
 require '../vendor/autoload.php';
 
 use function BrainGames\Cli\run;
