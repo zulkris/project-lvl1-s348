@@ -8,8 +8,15 @@
             "email": "2garin.zmej@gmail.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+             "Braingames\\": "src"
+        }
+    },
     "bin": [
     	"bin/brain-games"
     ],
-    "require": {}
+    "require": {
+    	"wp-cli/php-cli-tools": "*"
+    }
 }

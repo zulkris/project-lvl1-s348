@@ -1,4 +1,11 @@
 #!/usr/bin/php
 <?php
 
-echo 'Welcome to the Brain Games!';
+
+$autoloadPath = __DIR__ . '../vendor/autoload.php';
+if (file_exists($autoloadPath)) {
+	require_once $autoloadPath1;
+}
+
+
+run();
