@@ -1,0 +1,15 @@
+{
+    "name": "zulkris/brain-games",
+    "description": "1st step",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Zahar Stebloysky",
+            "email": "2garin.zmej@gmail.com"
+        }
+    ],
+    "bin": [
+    	"bin/brain-games"
+    ],
+    "require": {}
+}
