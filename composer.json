@@ -11,5 +11,13 @@
     "bin": [
     	"bin/brain-games"
     ],
+    "keywords": [
+        "hexlet",
+        "game",
+        "task",
+        "alek_web",
+	"zulkris",
+	"cli"
+    ],
     "require": {}
 }
