@@ -1,11 +1,4 @@
-#!/usr/bin/php
+#!/usr/bin/env php
 <?php
 
-
-$autoloadPath = __DIR__ . '../vendor/autoload.php';
-if (file_exists($autoloadPath)) {
-	require_once $autoloadPath1;
-}
-
-BrainGames\Cli\run();
-
+echo "Welcome to the Brain Games!";
