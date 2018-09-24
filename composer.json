@@ -1,22 +1,15 @@
 {
     "name": "zulkris/brain-games",
-    "description": "1st step",
+    "description": "1 of 4 project on Hexlet.io (PHP) by ZulKris / menthor Alex O.",
     "type": "project",
     "authors": [
         {
-            "name": "Zahar Stebloysky",
+            "name": "zulkris",
             "email": "2garin.zmej@gmail.com"
         }
     ],
-    "autoload": {
-        "psr-4": {
-             "BrainGames\\": "src"
-        }
-    },
     "bin": [
     	"bin/brain-games"
     ],
-    "require": {
-    	"wp-cli/php-cli-tools": "*"
-    }
+    "require": {}
 }
