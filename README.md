@@ -8,4 +8,10 @@ This repository is by zulkris for educational project "brain-games" of Hexlet. [
 
 ### Task #1
 
-https://asciinema.org/a/Z7xIVoK4TSWyUg0XDt2xXM9jN 
+https://asciinema.org/a/Z7xIVoK4TSWyUg0XDt2xXM9jN
+
+
+### Task #2
+
+https://asciinema.org/a/waiting
+
