@@ -16,8 +16,8 @@
         "game",
         "task",
         "alek_web",
-	"zulkris",
-	"cli"
+	    "zulkris",
+	    "cli"
     ],
     "autoload": {
         "files": [
