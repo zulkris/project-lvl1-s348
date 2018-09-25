@@ -13,5 +13,5 @@ https://asciinema.org/a/Z7xIVoK4TSWyUg0XDt2xXM9jN
 
 ### Task #2
 
-https://asciinema.org/a/waiting
+https://asciinema.org/a/82aFiGccY7IQNwiixz0YwO5Nx
 
