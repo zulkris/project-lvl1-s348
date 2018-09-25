@@ -5,9 +5,11 @@
    *
    * Main file to start game
    *
-   * @category   Project
-   * @package    Task 2
-   * @author     zulkris <2garin.zmej@gmail.com>
+   * @category  Project
+   * @package   Task2
+   * @author    zulkris <2garin.zmej@gmail.com>
+   * @link      https://packagist.org/packages/zulkris/brain-games
+   * @license   absolutely_not
    */
 $autoloadPath1 = __DIR__ . '/../../../autoload.php';
 $autoloadPath2 = __DIR__ . '/../vendor/autoload.php';
