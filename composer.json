@@ -25,7 +25,8 @@
         ]
     },
     "require": {
-        "wp-cli/php-cli-tools": "@dev"
-    }
-    
+        "wp-cli/php-cli-tools": "dev-master"
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
 }
