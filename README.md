@@ -18,4 +18,4 @@ https://asciinema.org/a/82aFiGccY7IQNwiixz0YwO5Nx
 
 ### Task #3
 
-https://api.travis-ci.com/zulkris/project-lvl1-s348.svg?branch=master
+[![Build Status](https://travis-ci.com/zulkris/project-lvl1-s348.svg?branch=master)](https://travis-ci.com/zulkris/project-lvl1-s348)
