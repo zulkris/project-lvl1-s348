@@ -21,3 +21,7 @@ https://asciinema.org/a/82aFiGccY7IQNwiixz0YwO5Nx
 [![Build Status](https://travis-ci.com/zulkris/project-lvl1-s348.svg?branch=master)](https://travis-ci.com/zulkris/project-lvl1-s348)
 
 
+### Task #4
+
+https://asciinema.org/pending
+
