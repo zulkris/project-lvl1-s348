@@ -1,4 +1,4 @@
-# Brain-Games 
+# Brain-Games
 
 <a href="https://codeclimate.com/github/zulkris/project-lvl1-s348/maintainability"><img src="https://api.codeclimate.com/v1/badges/f6af44e908fa163b1683/maintainability" /></a>    <a href="https://codeclimate.com/github/zulkris/project-lvl1-s348/test_coverage"><img src="https://api.codeclimate.com/v1/badges/f6af44e908fa163b1683/test_coverage" /></a>
 
@@ -20,8 +20,10 @@ https://asciinema.org/a/82aFiGccY7IQNwiixz0YwO5Nx
 
 [![Build Status](https://travis-ci.com/zulkris/project-lvl1-s348.svg?branch=master)](https://travis-ci.com/zulkris/project-lvl1-s348)
 
-
 ### Task #4
 
 https://asciinema.org/a/Czum3IuAhylUjpYhrRyp6E9ra
 
+### Task #5
+
+https://asciinema.org/a/d95lEvCPwIyin8nGH7CHTXG1i
