@@ -1,6 +1,6 @@
 {
     "name": "zulkris/brain-games",
-    "description": "1 of 4 project on Hexlet.io (PHP) by ZulKris / menthor Alex O.",
+    "description": "1 of 4 project on Hexlet.io (PHP) by ZulKris / mentor Alex O.",
     "type": "project",
     "authors": [
         {
@@ -10,7 +10,7 @@
     ],
     "bin": [
         "bin/brain-games",
-	    "bin/brain-even"
+        "bin/brain-even"
     ],
     "keywords": [
         "hexlet",
@@ -23,7 +23,9 @@
     "autoload": {
         "files": [
             "src/Cli.php",
-			"src/games/even.php"
+            "src/GameLogic.php",
+            "src/games/even.php",
+            "src/games/calc.php"
         ]
     },
     "require": {

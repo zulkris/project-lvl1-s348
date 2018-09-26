@@ -1,30 +1,20 @@
 <?php
-namespace BrainGames\Games;
+namespace BrainGames\Games\Even;
 
-use BrainGames\Cli;
-use function \cli\line;
-use function \cli\prompt;
+const GAME_NAME = 'Even';
+const RULES = 'Answer "yes" if number even otherwise answer "no".';
+const STEPS = 3;
 
-function even()
+function getQuestion()
 {
-    Cli\printWelcome();
-    Cli\printRules('Answer "yes" if number even otherwise answer "no".');
-    $name = Cli\askForName();
+    return rand(0, 100);
+}
+function getRightAnswer($number)
+{
+    return isEven($number) ? 'yes' : 'no';
+}
 
-    for ($i=1; $i<=3; $i++) {
-        $rand = rand(1, 100);
-        line("Question: $rand");
-        $answer = prompt("You answer");
-        if (($rand%2 == 0 && $answer == "yes") || ($rand%2 !== 0 && $answer == "no")) {
-            line('Correct!');
-            line();
-        } else {
-            line();
-            $correctAnswer = $rand%2 == 0 ? "yes" : "no";
-            line('\'%s\' is wrong answer ;(. Correct answer was \'%s\'', $answer, $correctAnswer);
-            line('Let\'s try again, %s!', $name);
-            exit;
-        }
-    }
-    line('Congratulations, %s!', $name);
+function isEven($number)
+{
+    return $number%2 == 0 ? true : false ;
 }
