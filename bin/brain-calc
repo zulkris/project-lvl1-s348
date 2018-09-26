@@ -10,7 +10,6 @@ if (file_exists($autoloadPath1)) {
     include_once $autoloadPath2;
 }
 
-
 use function BrainGames\Logic\play;
 
 use const BrainGames\Games\Calc\GAME_NAME;

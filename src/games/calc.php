@@ -13,7 +13,27 @@ function getQuestion()
     $randnum2 = rand(0, 100);
     return "$randnum1 ".$signs[0]." $randnum2";
 }
+
 function getRightAnswer($expression)
 {
-    return;
+    $values = explode(' ', $expression);
+    $num1 = $values[0];
+    $num2 = $values[2];
+    $sign = $values[1];
+
+    switch ($sign) {
+        case "+":
+            $result = $num1 + $num2;
+            break;
+        case "-":
+            $result = $num1 - $num2;
+            break;
+        case "*":
+            $result = $num1 * $num2;
+            break;
+    }
+
+    return $result;
 }
+
+//echo getRightAnswer(getQuestion());
