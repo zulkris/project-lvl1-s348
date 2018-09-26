@@ -9,8 +9,8 @@
         }
     ],
     "bin": [
-    	"bin/brain-games",
-	"bin/brain-even"
+        "bin/brain-games",
+	    "bin/brain-even"
     ],
     "keywords": [
         "hexlet",
@@ -22,7 +22,8 @@
     ],
     "autoload": {
         "files": [
-            "src/Cli.php"
+            "src/Cli.php",
+			"src/games/even.php"
         ]
     },
     "require": {
