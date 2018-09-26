@@ -16,11 +16,10 @@ function gameEven()
     line('Welcome to the Brain Games!');
     line('Answer "yes" if number even otherwise answer "no".');
     line();
-    $answerArr = array("yes" => "no", "no" => "yes");
-    //print_r($answerArr); exit;
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
     line();
+    
     for ($i=1; $i<=3; $i++) {
         $rand = rand(1, 100);
         line("Question: $rand");
@@ -30,7 +29,8 @@ function gameEven()
             line();
         } else {
             line();
-            line('\'%s\' is wrong answer ;(. Correct answer was \'%s\'', $answer, $answerArr["$answer"]);
+            $correctAnswer = $rand%2 == 0 ? "yes" : "no";
+            line('\'%s\' is wrong answer ;(. Correct answer was \'%s\'', $answer, $correctAnswer);
             line('Let\'s try again, %s!', $name);
             exit;
         }
