@@ -2,7 +2,18 @@
 namespace BrainGames\Games\Calc;
 
 const GAME_NAME = 'Calc';
-const RULES = 'Answer "yes" if number even otherwise answer "no".';
+const RULES = 'What is the result of the expression?';
 const STEPS = 3;
 
-//play(GAME_NAME, RULES, STEPS);
+function getQuestion()
+{
+    $signs = array("+", "-", "*");
+    shuffle($signs);
+    $randnum1 = rand(0, 100);
+    $randnum2 = rand(0, 100);
+    return "$randnum1 ".$signs[0]." $randnum2";
+}
+function getRightAnswer($expression)
+{
+    return;
+}

@@ -10,8 +10,10 @@ function play($gameName, $rules, $steps)
     $name = \BrainGames\Cli\askForName();
 
     for ($i = 1; $i <= $steps; $i++) {
-        $question = Game\Even\getQuestion();
-        $rightAnswer = Game\Even\getRightAnswer($question);
+        $questionFunction = '\\BrainGames\\Games\\'.$gameName.'\\getQuestion';
+        $question = $questionFunction();
+        $rightAnswerFunction = '\\BrainGames\\Games\\'.$gameName.'\\getRightAnswer';
+        $rightAnswer = $rightAnswerFunction($question);
 
         \cli\line("Question: $question");
         $answer = \cli\prompt("You answer");
