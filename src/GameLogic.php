@@ -1,6 +1,8 @@
 <?php
 namespace BrainGames\Logic;
 
+use \BrainGames\Games as Game;
+
 function play($gameName, $rules, $steps)
 {
     \BrainGames\Cli\printWelcome();
@@ -8,8 +10,8 @@ function play($gameName, $rules, $steps)
     $name = \BrainGames\Cli\askForName();
 
     for ($i = 1; $i <= $steps; $i++) {
-        $question = \BrainGames\Games\Even\getQuestion();
-        $rightAnswer = \BrainGames\Games\Even\getRightAnswer($question);
+        $question = Game\Even\getQuestion();
+        $rightAnswer = Game\Even\getRightAnswer($question);
 
         \cli\line("Question: $question");
         $answer = \cli\prompt("You answer");
