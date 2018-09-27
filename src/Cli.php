@@ -21,8 +21,8 @@ function askForName()
     line();
     return $name;
 }
-function printRules($rules)
+function printDescription($description)
 {
-    line($rules);
+    line($description);
     line();
 }
