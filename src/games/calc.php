@@ -2,7 +2,7 @@
 namespace BrainGames\Games\Calc;
 
 const GAME_NAME = 'Calc';
-const RULES = 'What is the result of the expression?';
+const DESCRIPTION = 'What is the result of the expression?';
 const STEPS = 3;
 
 function getQuestion()
@@ -12,7 +12,7 @@ function getQuestion()
     $randnum1 = rand(0, 100);
     $randnum2 = rand(0, 100);
     return "$randnum1 ".$signs[0]." $randnum2";
-}
+};
 
 function getRightAnswer($expression)
 {
@@ -34,6 +34,14 @@ function getRightAnswer($expression)
     }
 
     return $result;
-}
+};
 
-//echo getRightAnswer(getQuestion());
+function letsplay()
+{
+    $gameData = function () {
+        $question = getQuestion();
+        $rightAnswer = getRightAnswer($question);
+        return [$question, $rightAnswer];
+    };
+    \BrainGames\Cli\play(GAME_NAME, DESCRIPTION, $gameData);
+}

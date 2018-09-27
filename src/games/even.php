@@ -2,8 +2,7 @@
 namespace BrainGames\Games\Even;
 
 const GAME_NAME = 'Even';
-const RULES = 'Answer "yes" if number even otherwise answer "no".';
-const STEPS = 3;
+const DESCRIPTION = 'Answer "yes" if number even otherwise answer "no".';
 
 function getQuestion()
 {
@@ -16,5 +15,16 @@ function getRightAnswer($number)
 
 function isEven($number)
 {
-    return $number%2 == 0 ? true : false ;
+    return $number%2 === 0;
+}
+
+function letsplay()
+{
+    $gameData = function () {
+            $question = getQuestion();
+            $rightAnswer = getRightAnswer($question);
+            return ['question' => $question, 'rightanswer' => $rightAnswer];
+    };
+
+    \BrainGames\Cli\play(GAME_NAME, DESCRIPTION, $gameData);
 }

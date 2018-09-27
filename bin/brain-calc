@@ -10,10 +10,4 @@ if (file_exists($autoloadPath1)) {
     include_once $autoloadPath2;
 }
 
-use function BrainGames\Logic\play;
-
-use const BrainGames\Games\Calc\GAME_NAME;
-use const BrainGames\Games\Calc\RULES;
-use const BrainGames\Games\Calc\STEPS;
-
-play(GAME_NAME, RULES, STEPS);
+BrainGames\Games\Calc\letsplay();

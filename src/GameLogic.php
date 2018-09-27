@@ -1,32 +1,31 @@
 <?php
-namespace BrainGames\Logic;
+namespace BrainGames\Cli;
 
-use \BrainGames\Games as Game;
+const STEPS = 3;
+use function \cli\line;
+use function \cli\prompt;
 
-function play($gameName, $rules, $steps)
+function play($gameName, $description, $gameData)
 {
-    \BrainGames\Cli\printWelcome();
-    \BrainGames\Cli\printRules($rules);
-    $name = \BrainGames\Cli\askForName();
+    printWelcome();
+    printDescription($description);
+    $name = askForName();
 
-    for ($i = 1; $i <= $steps; $i++) {
-        $questionFunction = '\\BrainGames\\Games\\'.$gameName.'\\getQuestion';
-        $question = $questionFunction();
-        $rightAnswerFunction = '\\BrainGames\\Games\\'.$gameName.'\\getRightAnswer';
-        $rightAnswer = $rightAnswerFunction($question);
+    for ($i = 1; $i <= STEPS; $i++) {
+        [$question, $rightAnswer] = $gameData();
 
-        \cli\line("Question: $question");
-        $answer = \cli\prompt("You answer");
+        line("Question: $question");
+        $answer = prompt("You answer");
 
         if ($answer == $rightAnswer) {
-            \cli\line('Correct!');
-            \cli\line();
+            line('Correct!');
+            line();
         } else {
-            \cli\line();
-            \cli\line('\'%s\' is wrong answer ;(. Correct answer was \'%s\'', $answer, $rightAnswer);
-            \cli\line('Let\'s try again, %s!', $name);
+            line();
+            line('\'%s\' is wrong answer ;(. Correct answer was \'%s\'', $answer, $rightAnswer);
+            line('Let\'s try again, %s!', $name);
             return;
         }
     }
-    \cli\line('Congratulations, %s!', $name);
+    line('Congratulations, %s!', $name);
 }
