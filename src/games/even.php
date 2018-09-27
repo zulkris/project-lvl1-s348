@@ -23,7 +23,7 @@ function letsplay()
     $gameData = function () {
             $question = getQuestion();
             $rightAnswer = getRightAnswer($question);
-            return ['question' => $question, 'rightanswer' => $rightAnswer];
+            return [$question, $rightAnswer];
     };
 
     \BrainGames\Cli\play(GAME_NAME, DESCRIPTION, $gameData);

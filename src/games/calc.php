@@ -39,9 +39,9 @@ function getRightAnswer($expression)
 function letsplay()
 {
     $gameData = function () {
-        $question = getQuestion();
-        $rightAnswer = getRightAnswer($question);
-        return [$question, $rightAnswer];
+            $question = getQuestion();
+            $rightAnswer = getRightAnswer($question);
+            return [$question, $rightAnswer];
     };
     \BrainGames\Cli\play(GAME_NAME, DESCRIPTION, $gameData);
 }
