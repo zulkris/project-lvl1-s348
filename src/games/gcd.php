@@ -5,23 +5,30 @@ use function \BrainGames\Cli\play;
 
 const DESCRIPTION = 'Find the greatest common divisor of given numbers.';
 
-function getRandomPrime()
+function getGCD($a, $b)
 {
-    $arr = array(2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31);
-    $res = array_rand($arr);
-    return $arr[$res];
+    if ($b > $a) {
+        [$a ,$b] = [$b, $a];
+    }
+
+    $r = $a%$b;
+    while ($r !== 0) {
+        $a = $b;
+        $b = $r;
+        $r = $a%$b;
+    }
+    return $b;
 }
 
 function gameData()
 {
-    $gcd = getRandomPrime();
-
-    $num1 = $gcd*rand(0, 30);
-    $num2 = $gcd*rand(0, 30);
+    $num1 = rand(0, 100);
+    $num2 = rand(0, 100);
 
     $question = "$num1 $num2";
+    $rightAnswer = getGCD($num1, $num2);
 
-    return [$question, $gcd];
+    return [$question, $rightAnswer];
 }
 
 function letsplay()
