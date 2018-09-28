@@ -27,3 +27,7 @@ https://asciinema.org/a/Czum3IuAhylUjpYhrRyp6E9ra
 ### Task #5
 
 https://asciinema.org/a/d95lEvCPwIyin8nGH7CHTXG1i
+
+### Task #6
+
+https://asciinema.org/a/kyip19mkssihgrEaob24jwsFp
