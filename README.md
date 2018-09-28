@@ -24,6 +24,8 @@ add travis badge
 
 https://asciinema.org/a/Czum3IuAhylUjpYhrRyp6E9ra
 
+[![asciicast](https://asciinema.org/a/Czum3IuAhylUjpYhrRyp6E9ra.png)](https://asciinema.org/a/Czum3IuAhylUjpYhrRyp6E9ra)
+
 ### Task #5
 
 https://asciinema.org/a/d95lEvCPwIyin8nGH7CHTXG1i
