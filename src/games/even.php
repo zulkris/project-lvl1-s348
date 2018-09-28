@@ -26,6 +26,5 @@ function letsplay()
             $rightAnswer = getRightAnswer($question);
             return [$question, $rightAnswer];
     };
-
     play(DESCRIPTION, $gameData);
 }
