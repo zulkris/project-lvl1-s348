@@ -5,7 +5,7 @@ const STEPS = 3;
 use function \cli\line;
 use function \cli\prompt;
 
-function play($gameName, $description, $gameData)
+function play($description, $gameData)
 {
     printWelcome();
     printDescription($description);

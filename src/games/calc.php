@@ -1,45 +1,41 @@
 <?php
 namespace BrainGames\Games\Calc;
 
-const GAME_NAME = 'Calc';
+use function \BrainGames\Cli\play;
+
 const DESCRIPTION = 'What is the result of the expression?';
 
-function getQuestion()
+function gameData()
 {
-    $signs = array("+", "-", "*");
-    shuffle($signs);
-    $randnum1 = rand(0, 100);
-    $randnum2 = rand(0, 100);
-    return "$randnum1 ".$signs[0]." $randnum2";
-}
+    $num1 = rand(0, 100);
+    $num2 = rand(0, 100);
 
-function getRightAnswer($expression)
-{
-    $values = explode(' ', $expression);
-    $num1 = $values[0];
-    $num2 = $values[2];
-    $sign = $values[1];
+    $signs = ['+', '-', '*'];
+    $randSign = array_rand($signs);
 
-    switch ($sign) {
+    switch ($signs[$randSign]) {
         case "+":
-            $result = $num1 + $num2;
+            $rightAnswer = $num1 + $num2;
             break;
         case "-":
-            $result = $num1 - $num2;
+            $rightAnswer = $num1 - $num2;
             break;
         case "*":
-            $result = $num1 * $num2;
+            $rightAnswer = $num1 * $num2;
             break;
     }
 
-    return $result;
+    $question = "$num1 {$signs[$randSign]} $num2";
+
+    return [$question, $rightAnswer];
 }
+
 function letsplay()
 {
     $gameData = function () {
-            $question = getQuestion();
-            $rightAnswer = getRightAnswer($question);
-            return [$question, $rightAnswer];
+            return gameData();
     };
-    \BrainGames\Cli\play(GAME_NAME, DESCRIPTION, $gameData);
+    play(DESCRIPTION, $gameData);
 }
+
+//echo gameData();
