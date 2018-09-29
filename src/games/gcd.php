@@ -19,21 +19,16 @@ function getGCD($a, $b)
     return $b;
 }
 
-function gameData()
-{
-    $num1 = rand(0, 100);
-    $num2 = rand(0, 100);
-
-    $question = "$num1 $num2";
-    $rightAnswer = getGCD($num1, $num2);
-
-    return [$question, $rightAnswer];
-}
-
 function letsplay()
 {
     $gameData = function () {
-            return gameData();
+        $num1 = rand(0, 100);
+        $num2 = rand(0, 100);
+
+        $question = "$num1 $num2";
+        $rightAnswer = getGCD($num1, $num2);
+
+        return [$question, $rightAnswer];
     };
     play(DESCRIPTION, $gameData);
 }
