@@ -17,7 +17,7 @@ function play($description, $gameData)
         line("Question: $question");
         $answer = prompt("You answer");
 
-        if ($answer == $rightAnswer) {
+        if ($answer === $rightAnswer) {
             line('Correct!');
             line();
         } else {

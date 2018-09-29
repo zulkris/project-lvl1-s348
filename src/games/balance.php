@@ -4,19 +4,8 @@ namespace BrainGames\Games\Balance;
 use function \BrainGames\Cli\play;
 
 const DESCRIPTION = 'Balance the given number.';
-const MIN_DEPTH = 2;
-const MAX_DEPTH = 5;
-
-function getUnbalancedNumber()
-{
-    $depth = rand(MIN_DEPTH, MAX_DEPTH);
-
-    $numbers = [];
-    for ($i = 0; $i < $depth; $i++) {
-        $numbers[] = rand(1, 9);
-    }
-    return implode($numbers);
-}
+const MIN = 10;
+const MAX = 9999;
 
 function getBalancedNumber($unbalancedNumber)
 {
@@ -40,7 +29,7 @@ function getBalancedNumber($unbalancedNumber)
 function letsplay()
 {
     $gameData = function () {
-        $unbalancedNumber = getUnbalancedNumber();
+        $unbalancedNumber = rand(MIN, MAX);
         $balancedNumber = getBalancedNumber($unbalancedNumber);
         return [$unbalancedNumber, $balancedNumber];
     };
