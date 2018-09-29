@@ -40,3 +40,7 @@ https://asciinema.org/a/Fvkgjme9PrZEUGYGDQ4g13Qhs
 ### Task #8
 
 https://asciinema.org/a/jBhp5nUJRN5rhVFvzGt2kNgR3
+
+### Task #9
+
+https://asciinema.org/a/gc7eqQkBbATpoWMeVmwRmilRv
