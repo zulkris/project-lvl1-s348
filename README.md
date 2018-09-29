@@ -30,4 +30,4 @@ https://asciinema.org/a/d95lEvCPwIyin8nGH7CHTXG1i
 
 ### Task #6
 
-https://asciinema.org/a/kyip19mkssihgrEaob24jwsFp
+https://asciinema.org/a/LD6Nj098v1MLt9MT3G236XbCA
