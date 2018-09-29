@@ -18,7 +18,7 @@ function gameData()
 
     $resArr = [$startNum];
     for ($i = 1; $i < PROGRESSION_LENGHT; $i++) {
-        $resArr[$i] = $resArr[$i-1]+$step;
+        $resArr[$i] = $resArr[$i-1] + $step;
     }
 
     $emptyNum = array_rand($resArr);
@@ -40,7 +40,7 @@ function letsplay()
 
         $resArr = [$startNum];
         for ($i = 1; $i < PROGRESSION_LENGHT; $i++) {
-            $resArr[$i] = $resArr[$i-1]+$step;
+            $resArr[$i] = $resArr[$i - 1] + $step;
         }
 
         $emptyNum = array_rand($resArr);

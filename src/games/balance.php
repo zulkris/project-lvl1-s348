@@ -18,7 +18,7 @@ function getBalancedNumber($unbalancedNumber)
         if ($key < ($depth - $maxNumberCount)) {
             $acc[$key] = $minNumber;
         } else {
-            $acc[$key] = $minNumber+1;
+            $acc[$key] = $minNumber + 1;
         }
         return $acc;
     }, []);
