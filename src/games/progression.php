@@ -29,7 +29,6 @@ function gameData()
     $question = implode($resArr, ' ');
 
     return [$question, $rightAnswer];
-
 }
 
 function letsplay()
@@ -55,6 +54,3 @@ function letsplay()
     };
     play(DESCRIPTION, $gameData);
 }
-
-
-gameData();
