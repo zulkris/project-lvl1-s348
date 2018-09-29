@@ -3,7 +3,7 @@ namespace BrainGames\Games\Balance;
 
 use function \BrainGames\Cli\play;
 
-const DESCRIPTION = 'What is the result of the expression?';
+const DESCRIPTION = 'Balance the given number.';
 const MIN_DEPTH = 2;
 const MAX_DEPTH = 5;
 

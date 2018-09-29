@@ -13,7 +13,8 @@
         "bin/brain-even",
         "bin/brain-calc",
         "bin/brain-gcd",
-        "bin/brain-balance"
+        "bin/brain-balance",
+        "bin/brain-progression"
     ],
     "keywords": [
         "hexlet",
@@ -30,7 +31,8 @@
             "src/games/even.php",
             "src/games/calc.php",
             "src/games/gcd.php",
-            "src/games/balance.php"
+            "src/games/balance.php",
+            "src/games/progression.php"
         ]
     },
     "require": {
