@@ -4,12 +4,16 @@ namespace BrainGames\Games\Prime;
 use function \BrainGames\Cli\play;
 
 const DESCRIPTION = 'Answer "yes" if number prime otherwise answer "no".';
+const MIN = 1;
 const MAX = 300;
 
 function isPrime($number)
 {
+    if ($number <= 1) {
+        return false;
+    }
     for ($i = 2; $i <= $number/2; $i++) {
-        if (($number % $i) === 0) {
+        if (($number % $i) == 0) {
             return false;
         }
     }
@@ -25,10 +29,10 @@ function getRightAnswer($number)
 function letsplay()
 {
     $gameData = function () {
-        $question = rand(2, MAX);
+        $question = rand(MIN, MAX);
         $rightAnswer = getRightAnswer($question);
 
-        return [$question,  $rightAnswer];
+        return [$question, $rightAnswer];
     };
     play(DESCRIPTION, $gameData);
 }
