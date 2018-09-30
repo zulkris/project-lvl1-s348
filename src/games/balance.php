@@ -12,7 +12,7 @@ function getBalancedNumber($unbalancedNumber)
     $numbers = str_split($unbalancedNumber);
     $depth = count($numbers);
     $minNumber = (int)(array_sum($numbers) / $depth);
-    $maxNumberCount = array_sum($numbers) - $minNumber*$depth;
+    $maxNumberCount = array_sum($numbers) - $minNumber * $depth;
 
     $resArr = array_reduce(array_keys($numbers), function ($acc, $key) use ($depth, $minNumber, $maxNumberCount) {
         if ($key < ($depth - $maxNumberCount)) {
