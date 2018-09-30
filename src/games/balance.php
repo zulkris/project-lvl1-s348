@@ -31,7 +31,7 @@ function letsplay()
     $gameData = function () {
         $unbalancedNumber = rand(MIN, MAX);
         $balancedNumber = getBalancedNumber($unbalancedNumber);
-        return [$unbalancedNumber, $balancedNumber];
+        return [$unbalancedNumber, (string)$balancedNumber];
     };
     play(DESCRIPTION, $gameData);
 }

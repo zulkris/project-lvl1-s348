@@ -25,7 +25,7 @@ function letsplay()
                 break;
         }
         $question = "$num1 $sign $num2";
-        return [$question, $rightAnswer];
+        return [$question, (string)$rightAnswer];
     };
     play(DESCRIPTION, $gameData);
 }

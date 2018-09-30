@@ -28,7 +28,7 @@ function letsplay()
         $question = "$num1 $num2";
         $rightAnswer = getGCD($num1, $num2);
 
-        return [$question, $rightAnswer];
+        return [$question, (string)$rightAnswer];
     };
     play(DESCRIPTION, $gameData);
 }

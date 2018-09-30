@@ -17,9 +17,9 @@ function letsplay()
         $startNum = rand(MIN_START_NUM, MAX_START_NUM);
         $step = rand(MIN_STEP, MAX_STEP);
 
-        $resArr = [$startNum];
-        for ($i = 1; $i < PROGRESSION_LENGHT; $i++) {
-            $resArr[$i] = $startNum + $i * $step;
+        $resArr = [];
+        for ($i = 0; $i < PROGRESSION_LENGHT; $i++) {
+            $resArr[] = $startNum + $i * $step;
         }
 
         $emptyNum = array_rand($resArr);
@@ -29,7 +29,7 @@ function letsplay()
 
         $question = implode($resArr, ' ');
 
-        return [$question, $rightAnswer];
+        return [$question, (string)$rightAnswer];
     };
     play(DESCRIPTION, $gameData);
 }
